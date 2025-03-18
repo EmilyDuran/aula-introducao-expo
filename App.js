@@ -2,6 +2,7 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
 import Constants from 'expo-constants';
+import Exemplo2 from './src/exemplos/ex-02';
 
 export default function App() {
   return (
