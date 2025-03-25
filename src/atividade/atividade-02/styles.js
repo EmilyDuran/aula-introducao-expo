@@ -8,6 +8,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         borderRadius: 20,
+        width: '80%'
     },
     titulo: {
         fontSize: RFPercentage(3),
