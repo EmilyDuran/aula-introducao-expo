@@ -25,7 +25,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
     }, 
     texto: {
-        fontSize: RFPercentage(2.2),  
+        fontSize: RFPercentage(2.2), 
     }, 
     botaoAlert: {
         width: '100%',         
@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
     }, 
     botao: {
         backgroundColor: 'deepskyblue', 
-        width: '70%', 
-        // height: RFPercentage(4), 
+        width: '40%', 
+        height: RFPercentage(5), 
         borderRadius: RFPercentage(2), 
         alignItems: 'center', 
         justifyContent: 'center', 
@@ -49,8 +49,14 @@ const styles = StyleSheet.create({
         fontSize: RFPercentage(2), 
         color: '#fafafa', 
         fontWeight: 'bold', 
-        letterSpacing: 1.5,
+        letterSpacing: 2,
     },
+    grupo: {
+        flexDirection: 'row',
+        display: 'flex',
+
+    },
+    
 });
 
 export default styles;
