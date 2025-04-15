@@ -1,63 +1,44 @@
 import { StyleSheet } from 'react-native'; 
+
 import { RFPercentage } from 'react-native-responsive-fontsize';
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#fff', 
-        padding: 8, 
-        flex: 1, 
-        alignItems: 'center', 
-        borderRadius: 20,
+        flex: 1,         
+        backgroundColor: '#fafafa', 
+        alignItems: 'center'
     }, 
-    titulo: {
+    titulo: { 
+        fontFamily: 'monospace', 
         fontSize: RFPercentage(3), 
-        color: 'deepskyblue', 
         fontWeight: 'bold', 
-        borderWidth: 2, 
-        borderColor: 'deepskyblue', 
-        marginTop: 10, 
-        marginBottom: 10, 
-        padding: 8, 
-        width: '100%', 
-        height: 80, 
-        textAlign: 'center', 
-        textAlignVertical: 'center', 
-        borderRadius: 20,
-    }, 
-    texto: {
-        fontSize: RFPercentage(2.2), 
-    }, 
-    botaoAlert: {
-        width: '100%',         
-        margin: RFPercentage(1),
-    }, 
-    numero: {
-        fontSize: RFPercentage(4), 
-        color: 'coral',
-        margin: RFPercentage(2)
+        color: 'deepskyblue', 
+        marginVertical: RFPercentage(2),
     }, 
     botao: {
-        backgroundColor: 'deepskyblue', 
-        width: '40%', 
-        height: RFPercentage(5), 
-        borderRadius: RFPercentage(2), 
-        alignItems: 'center', 
+        backgroundColor: 'deepskyblue',         
+        borderRadius: ('50%'), 
+        width: RFPercentage(8), 
+        height: RFPercentage(8), 
         justifyContent: 'center', 
-        padding: RFPercentage(1),
+        alignItems: 'center',
     }, 
     txtBotao: {
-        fontSize: RFPercentage(2), 
+        fontFamily: 'monospace', 
         color: '#fafafa', 
         fontWeight: 'bold', 
-        letterSpacing: 2,
-    },
-    grupo: {
-        flexDirection: 'row',
-        display: 'flex',
-
-    },
-    
-});
+        fontSize: RFPercentage(5), 
+    }, 
+    botaoZerar: {
+        width: RFPercentage(30),
+    }, 
+    containerHorizontal: { 
+        flexDirection: 'row', 
+        marginVertical: RFPercentage(4),   
+        justifyContent: 'space-evenly', 
+        // borderWidth: 5, 
+        width: '100%', 
+    }, 
+}); 
 
 export default styles;
-

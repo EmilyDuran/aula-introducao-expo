@@ -1,51 +1,38 @@
 import { useState } from 'react';
-import { View, Text, Button, Alert, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 
 import styles from './styles';
 
-function Atividade3() {
+export default function CorrecaoAtv3() { 
 
-    const [num, setNum] = useState(0);
+    const [numero, setNumero] = useState(0); 
 
-    function handleAtualizaState () {
-        setNum(num + 1);
-    }
-
-    function handleAtuaState () {
-        setNum(num - 1);
-    }
-
-    function handleAtualiState () {
-        setNum(0);
-    }
-    
     return (
         <View style={styles.container}>
-            <Text style={styles.titulo}>Atividade3</Text>
+            <Text style={styles.titulo}>Atividade 3</Text>
 
-            <View style={styles.grupo}>
+            <View style={styles.containerHorizontal}>
+                <TouchableOpacity 
+                    style={styles.botao} 
+                    onPress={() => setNumero(numero - 1)}
+                >
+                    <Text style={styles.txtBotao}>-</Text>
+                </TouchableOpacity>
+                <Text style={styles.titulo}>{numero}</Text>
+                <TouchableOpacity 
+                    style={styles.botao} 
+                    onPress={() => setNumero(numero + 1)}
+                >
+                    <Text style={styles.txtBotao}>+</Text>
+                </TouchableOpacity>
+            </View>
 
-            <TouchableOpacity style={styles.botao} onPress={handleAtualizaState}>
-                <Text style={styles.txtBotao}>+</Text>
-            </TouchableOpacity>
-
-            <Text style={styles.numero}>{num}</Text> 
-
-            <TouchableOpacity style={styles.botao} onPress={handleAtuaState}>
-                <Text style={styles.txtBotao}>-</Text>
-            </TouchableOpacity>
-      </View>
-
-           
-          
-            <TouchableOpacity style={styles.botao} onPress={handleAtualiState}>
+            <TouchableOpacity 
+                style={[styles.botao, styles.botaoZerar]} 
+                onPress={() => setNumero(0)}
+            >
                 <Text style={styles.txtBotao}>Zerar</Text>
             </TouchableOpacity>
-
-
         </View>
     );
 }
-
-export default Atividade3;
-
