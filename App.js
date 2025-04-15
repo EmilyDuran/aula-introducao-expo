@@ -4,14 +4,19 @@ import { StyleSheet, Text, View } from 'react-native';
 import Constants from 'expo-constants';
 import Atividade2 from './src/atividade/atividade-2';
 import Exemplo3 from './src/exemplos/ex-03';
-import Atividade3 from './src/atividade/atividade-3';
+import Atividade4 from './src/atividade/atividade-4';
+import Exemplo4 from './src/exemplos/ex-04'
  
+import * as React from 'react';
+import {View, StyleSheet} from 'react-native';
+import Constants from 'expo-constants';
+
+import Index from './src/atividade/atividade-4';
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Atividade3/>
-      <StatusBar style="light" />
+      <Index/>
     </View>
   );
 }
@@ -19,10 +24,11 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#000',
+    paddingTop: Constants.statusBarHeight,
+    backgroundColor: '#B71C1C',
     // alignItems: 'center',
-    // justifyContent: 'center',
+    justifyContent: 'center',
     padding: 8,
-    marginTop: Constants.statusBarHeight || 8,
+    // marginTop: Constants.statusBarHeight || 8,
   },
 });
