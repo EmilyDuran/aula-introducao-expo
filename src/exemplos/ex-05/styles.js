@@ -1,90 +1,66 @@
-import { StyleSheet } from "react-native";
-import { RFPercentage } from 'react-native-responsive-fontsize'
+import { StyleSheet } from "react-native"; // Importando o pacote StyleSheet do react-native
+import { RFPercentage } from "react-native-responsive-fontsize";
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: '#FF80AB',
     padding: 8,
     flex: 1,
-    alignItems: 'center',
-    borderRadius: 20,
+    justifyContent: 'center',
+
   },
   titulo: {
-      fontSize: RFPercentage(3),
-      fontWeight: 'bold',
-      borderWidth: 2,
-      borderColor: 'deepskyblue',
-      color: 'deepskyblue',
-      marginTop: 10,
-      marginBottom: 10,
-      padding: 8,
-      width: '100%',
-      height: 80,
-      textAlign: 'center',
-      textAlignVertical: 'center',
-      borderRadius: 20,
+    margin: 6,
+    fontSize: 18,
+    fontWeight: 'bold',
+    textAlign: 'center',
+    color: '#C51162',
   },
   texto: {
     fontSize: RFPercentage(2.2),
     color: 'deepskyblue',
   },
-  input: {
-    borderWidth: RFPercentage(0.2),
-    width: '100%',
-    fontSize: RFPercentage(2),
-    margin: RFPercentage(2),
-    borderRadius: RFPercentage(2),
-    borderColor: 'deepskyblue',
+  txtEntrada: {
+    borderWidth: 4,
+    textAlign: 'center',
+    fontSize: 22,
+    borderColor: '#E91E63',
+    height: 60,
+    color: '#E91E63',
+    borderRadius: 10,
+    marginTop: 10,
   },
-  botao: {
-    backgroundColor: 'deepskyblue',
-    width: '70%',
-    // height: RFPercentage(4),
-    borderRadius: RFPercentage(2),
-    alignItems: 'center',
-    justifyContent: 'center',
-    padding: RFPercentage(1),
-},
-txtBotao: {
-    fontSize: RFPercentage(2),
-    color: '#fafafa',
+
+
+  txtsaida: {
+    margin: 6,
+    fontSize: 22,
     fontWeight: 'bold',
-    letterSpacing: 1.5,
-},
-    txtSaida: {
-        margin: 6,
-        fontSize: 22,
-        fontWeight: 'bold',
-        textAlign: 'center',
-        color: '#E91E63',
-    },
-    txtEntrada: {
-        borderWidth: 4,
-        textAlign: 'center',
-        fontSize: 22,
-        borderColor: '#E91E63',
-        height: 40,
-        color: '#E53935',
-        borderRadius: 10,
-        marginTop: 10,
-    },
-    button: {
-        backgroundColor: '#E91E63',
-        height: 40,
-        justifyContent: 'center',
-        borderRadius: 10,
-        marginTop: 20,
-    },
-    textButton: {
-        fontSize: 22,
-        color: '#FF80AB',
-        textAlign: 'center',
-    },
-    textLabel: {
-        fontSize: 16,
-        fontWeight: 'bold',
-        color: '#C511636',
-    },
+    textAlign: 'center',
+    color: '#E91E63',
+  },
+
+  txtBotao: {
+    fontSize: 22,
+    color: '#FF80AB',
+    textAlign: 'center',
+  },
+
+  txtLabel: {
+    fontSize: 16,
+    color: '#C51162',
+    fontWeight: 'bold',
+  },
+
+  botao: {
+    backgroundColor: '#E91E63',
+    height: 40,
+    color: '#E91E63',
+    borderRadius: 10,
+    marginTop: 10,
+
+  },
 });
 
-export default styles;
+
+export default styles; // Exportando o objeto styles
