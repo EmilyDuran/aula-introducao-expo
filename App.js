@@ -9,13 +9,15 @@ import constants from 'expo-constants';
 import Atividade2 from './src/atividade/atividade-2';
 import Exemplo3 from './src/exemplos/ex-03';
 import Atividade4 from './src/atividade/atividade-4';
-import Exemplo4 from './src/exemplos/ex-04'
+import Exemplo4 from './src/exemplos/ex-04';
 import Exemplo5 from './src/exemplos/ex-05';
+import Exemplo6 from './src/exemplos/ex-06';
+
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo5/>
+      <Exemplo6/>
     </View>
   );
 }
