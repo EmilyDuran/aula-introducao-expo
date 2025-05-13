@@ -15,14 +15,14 @@ const styles = StyleSheet.create({
         margin: RFValue(6),
         fontSize: RFValue(28),
         fontWeight: 'bold',
-        color: '#aaa',
+        color: 'purple',
     },
     ladoalado: {
         flexDirection: 'row',
         marginVertical: RFValue(30),
     },
     imc: {
-        color: 'lightgray',
+        color: 'black',
         fontSize: RFValue(60),
         marginVertical: RFValue(15),
         textAlign: 'center',

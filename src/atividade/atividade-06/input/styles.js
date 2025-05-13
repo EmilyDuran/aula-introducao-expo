@@ -8,8 +8,8 @@ const styles = StyleSheet.create({
         width: '50%', 
         color: '#eee', 
         fontSize: RFValue(46), 
-        backgroundColor: '#aaa', 
-        borderRadius: RFValue(18), 
+        backgroundColor: 'purple', 
+        borderRadius: RFValue(20), 
         margin: RFValue(5), 
     }, 
 }); 
