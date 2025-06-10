@@ -14,12 +14,13 @@ import Exemplo5 from './src/exemplos/ex-05';
 import Exemplo6 from './src/exemplos/ex-06';
 import Atividade6 from './src/atividade/atividade-06';
 import Exemplo8 from './src/exemplos/ex-08';
+import Exemplos from './src/exemplos';
 
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Exemplo8/>
+      <Exemplos/>
     </View>
   );
 }
