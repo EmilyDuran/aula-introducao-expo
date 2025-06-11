@@ -21,6 +21,7 @@ export default function App() {
   return (
     <View style={styles.container}>
       <Exemplos/>
+      <statusbar></statusbar>
     </View>
   );
 }

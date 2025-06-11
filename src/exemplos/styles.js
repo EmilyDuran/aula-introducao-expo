@@ -20,7 +20,8 @@ const styles = StyleSheet.create({
         borderRadius: RFValue(10),
         padding: RFValue(5),
         width: '80%',
-        marginBottom: RFValue(10),
+        marginBottom: RFValue (10),
+
     },
 });
 
