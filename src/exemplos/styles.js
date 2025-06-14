@@ -14,7 +14,7 @@ const styles = StyleSheet.create({
         marginBottom: RFValue(20),
     },
     botao: {
-        alignItems: 'center'
+        alignItems: 'center',
         borderWidth: RFValue(3),
         borderColor: 'deepskyblue',
         borderRadius: RFValue(10),

@@ -13,9 +13,9 @@ function Sobre () {
                 imageStyle={{ opacity: 0.5 }}
                 style={styles.image}
             >
-                <Text style={style.titulo}>Sobre</Text>
-                <Text style={style.texto}>Aula de react-native com Expo</Text>
-                <Text style={style.texto}>exemplos e atividades</Text>
+                <Text style={styles.titulo}>Sobre</Text>
+                <Text style={styles.texto}>Aula de react-native com Expo</Text>
+                <Text style={styles.texto}>exemplos e atividades</Text>
             </ImageBackground>
         </View>
     );
